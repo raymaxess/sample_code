@@ -68,7 +68,7 @@ function normalizeDomain($website) {
 }
 
 $targetRows = array();
-$fp = fopen('inputs/easycare_dealers.csv', 'r');
+$fp = fopen('inputs/dealers.csv', 'r');
 $csvReader = new CsvReader($fp, ',');
 if ($csvReader->readHeader()) {
   while (($row = $csvReader->readRow()) !== false) {
